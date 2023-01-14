@@ -1,0 +1,13 @@
+@import "../base/reset";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../base/typography";
+
+button {
+  background-color: $primary-color;
+  height: 41px;
+  width: 170px;
+  border-radius: 20.5px;
+  font-weight: 800;
+  cursor: pointer;
+}

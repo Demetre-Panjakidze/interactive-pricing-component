@@ -1,0 +1,316 @@
+@import "./base/reset";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./base/typography";
+@import "./components/buttons";
+
+body {
+  // background
+  background-image: url("../images/bg-pattern.svg");
+  background-position: left top -100px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: $background-color;
+  // flex
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding
+  padding: 0 24px 0;
+
+  .background-image {
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+  }
+
+  h2 {
+    margin: 89px 0 0;
+  }
+
+  p {
+    margin: 8px 0 0;
+    max-width: 180px;
+    text-align: center;
+  }
+
+  .form-div {
+    background-color: $white;
+    border-radius: 8px;
+    margin: 64px 0 88px;
+    width: 100%;
+    max-width: 540px;
+    box-shadow: 0px 17px 17px 7px $box-shadow-color;
+
+    .choice-part {
+      padding: 34px 12px 38px 24px;
+      border-bottom: 1px solid $border-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .choice-top {
+        width: 100%;
+
+        h4 {
+          text-transform: uppercase;
+        }
+
+        .slide-input {
+          position: relative;
+          width: 100%;
+          margin: 41px 0 0 0;
+          // flex
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 100%;
+
+          .inner_div {
+            width: 100%;
+
+            input {
+              -webkit-appearance: none;
+              height: 8px;
+              width: 100%;
+              border-radius: 5px;
+              position: relative;
+              background: linear-gradient(
+                to right,
+                $slider-input-color 28.57%,
+                $border-color 28.57%,
+                $border-color 100%
+              );
+
+              &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                position: relative;
+                appearance: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                // background
+                background-image: url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-color: $slider-circle-color;
+                box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                  background-color: $circle-choice-color;
+                }
+
+                &:active {
+                  background-color: $slider-circle-touch-color;
+                  cursor: grab;
+                }
+              }
+
+              &::-moz-range-thumb {
+                position: relative;
+                appearance: none;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-image: url("../images/icon-slider.svg");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-color: $slider-circle-color;
+                box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                  background-color: $circle-choice-color;
+                }
+
+                &:active {
+                  background-color: $slider-circle-touch-color;
+                  cursor: grab;
+                }
+              }
+            }
+          }
+        }
+
+        .price {
+          margin: 40px 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+
+      .year-month-choice {
+        margin: 34px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5.5px;
+
+        .choice-left {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .choice-input {
+            width: 43px;
+            height: 22px;
+            background-color: $circle-choice-color;
+            border-radius: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .circle {
+              width: 14px;
+              height: 14px;
+              background-color: $white;
+              border-radius: 50%;
+
+              &-left {
+                position: absolute;
+                left: 4px;
+              }
+
+              &-right {
+                position: absolute;
+                right: 4px;
+                display: none;
+              }
+            }
+          }
+        }
+
+        .choice-right {
+          background-color: $percent-background-color;
+          padding: 2px 8px 3px 7px;
+          border-radius: 9.5px;
+
+          .second-posibility {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .selecting-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 33px;
+
+      .info-about-product {
+        margin: 24px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 16.05px;
+        }
+      }
+
+      a {
+        margin: 0 0 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-size: 100% auto;
+
+    .background-image {
+      top: 67px;
+    }
+
+    h2 {
+      margin: 104px 0 0;
+    }
+
+    p {
+      max-width: 367px;
+      margin: 12px 0 0;
+    }
+
+    .form-div {
+      margin: 92px 0 0;
+
+      .choice-part {
+        padding: 40px 48px 40px 46px;
+
+        .choice-top {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          h4 {
+            grid-area: 1/1/2/2;
+            align-self: center;
+            justify-self: left;
+          }
+
+          .slide-input {
+            grid-area: 2/1/3/3;
+            align-self: center;
+          }
+
+          .price {
+            margin: 0;
+            grid-area: 1/2/2/3;
+            align-self: center;
+            justify-self: end;
+          }
+        }
+
+        .year-month-choice {
+          margin: 56px 17px 0 0;
+          gap: 9px;
+          align-self: flex-end;
+
+          .choice-left {
+            gap: 16px;
+          }
+
+          .choice-right {
+            .first-posibility {
+              display: none;
+            }
+
+            .second-posibility {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .selecting-part {
+        padding: 32px 44px 33px 48px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .info-about-product {
+          margin: 0;
+          align-items: flex-start;
+        }
+
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,636 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -0.8000000119px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 1.7142857313px;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 14px;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: -1px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+}
+h1,
+h2 {
+  color: #293356;
+}
+
+h3,
+h4,
+h5,
+p {
+  color: #848EAD;
+}
+
+h6 {
+  color: #FF8D68;
+}
+
+button h5 {
+  font-weight: 800;
+  color: #BECDFF;
+}
+button:hover h5 {
+  color: #FFF;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -0.8000000119px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 1.7142857313px;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 14px;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: -1px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+}
+h1,
+h2 {
+  color: #293356;
+}
+
+h3,
+h4,
+h5,
+p {
+  color: #848EAD;
+}
+
+h6 {
+  color: #FF8D68;
+}
+
+button h5 {
+  font-weight: 800;
+  color: #BECDFF;
+}
+button:hover h5 {
+  color: #FFF;
+}
+
+button {
+  background-color: #293356;
+  height: 41px;
+  width: 170px;
+  border-radius: 20.5px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../images/bg-pattern.svg");
+  background-position: left top -100px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: #fafbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px 0;
+}
+body .background-image {
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -5;
+}
+body h2 {
+  margin: 89px 0 0;
+}
+body p {
+  margin: 8px 0 0;
+  max-width: 180px;
+  text-align: center;
+}
+body .form-div {
+  background-color: #FFF;
+  border-radius: 8px;
+  margin: 64px 0 88px;
+  width: 100%;
+  max-width: 540px;
+  box-shadow: 0px 17px 17px 7px #eaeefb;
+}
+body .form-div .choice-part {
+  padding: 34px 12px 38px 24px;
+  border-bottom: 1px solid #ECF0FB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .form-div .choice-part .choice-top {
+  width: 100%;
+}
+body .form-div .choice-part .choice-top h4 {
+  text-transform: uppercase;
+}
+body .form-div .choice-part .choice-top .slide-input {
+  position: relative;
+  width: 100%;
+  margin: 41px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div {
+  width: 100%;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(to right, #A4F3EB 28.57%, #ECF0FB 28.57%, #ECF0FB 100%);
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #10D8C4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-webkit-slider-thumb:hover {
+  background-color: #7AEADF;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-webkit-slider-thumb:active {
+  background-color: #24AEA1;
+  cursor: grab;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-moz-range-thumb {
+  position: relative;
+  appearance: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #10D8C4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-moz-range-thumb:hover {
+  background-color: #7AEADF;
+}
+body .form-div .choice-part .choice-top .slide-input .inner_div input::-moz-range-thumb:active {
+  background-color: #24AEA1;
+  cursor: grab;
+}
+body .form-div .choice-part .choice-top .price {
+  margin: 40px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body .form-div .choice-part .year-month-choice {
+  margin: 34px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.5px;
+}
+body .form-div .choice-part .year-month-choice .choice-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+body .form-div .choice-part .year-month-choice .choice-left .choice-input {
+  width: 43px;
+  height: 22px;
+  background-color: #7AEADF;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+body .form-div .choice-part .year-month-choice .choice-left .choice-input .circle {
+  width: 14px;
+  height: 14px;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+body .form-div .choice-part .year-month-choice .choice-left .choice-input .circle-left {
+  position: absolute;
+  left: 4px;
+}
+body .form-div .choice-part .year-month-choice .choice-left .choice-input .circle-right {
+  position: absolute;
+  right: 4px;
+  display: none;
+}
+body .form-div .choice-part .year-month-choice .choice-right {
+  background-color: #FEEDE8;
+  padding: 2px 8px 3px 7px;
+  border-radius: 9.5px;
+}
+body .form-div .choice-part .year-month-choice .choice-right .second-posibility {
+  display: none;
+}
+body .form-div .selecting-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+body .form-div .selecting-part .info-about-product {
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+body .form-div .selecting-part .info-about-product .info {
+  display: flex;
+  align-items: center;
+  gap: 16.05px;
+}
+body .form-div .selecting-part a {
+  margin: 0 0 32px;
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-size: 100% auto;
+  }
+  body .background-image {
+    top: 67px;
+  }
+  body h2 {
+    margin: 104px 0 0;
+  }
+  body p {
+    max-width: 367px;
+    margin: 12px 0 0;
+  }
+  body .form-div {
+    margin: 92px 0 0;
+  }
+  body .form-div .choice-part {
+    padding: 40px 48px 40px 46px;
+  }
+  body .form-div .choice-part .choice-top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .form-div .choice-part .choice-top h4 {
+    grid-area: 1/1/2/2;
+    align-self: center;
+    justify-self: left;
+  }
+  body .form-div .choice-part .choice-top .slide-input {
+    grid-area: 2/1/3/3;
+    align-self: center;
+  }
+  body .form-div .choice-part .choice-top .price {
+    margin: 0;
+    grid-area: 1/2/2/3;
+    align-self: center;
+    justify-self: end;
+  }
+  body .form-div .choice-part .year-month-choice {
+    margin: 56px 17px 0 0;
+    gap: 9px;
+    align-self: flex-end;
+  }
+  body .form-div .choice-part .year-month-choice .choice-left {
+    gap: 16px;
+  }
+  body .form-div .choice-part .year-month-choice .choice-right .first-posibility {
+    display: none;
+  }
+  body .form-div .choice-part .year-month-choice .choice-right .second-posibility {
+    display: block;
+  }
+  body .form-div .selecting-part {
+    padding: 32px 44px 33px 48px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .form-div .selecting-part .info-about-product {
+    margin: 0;
+    align-items: flex-start;
+  }
+  body .form-div .selecting-part a {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

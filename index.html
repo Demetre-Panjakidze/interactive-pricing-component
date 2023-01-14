@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- css and js -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./javaScript/script.js" defer></script>
+  </head>
+  <body>
+    <img src="./images/pattern-circles.svg" alt="" class="background-image" />
+    <h2>Simple, traffic-based pricing</h2>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+    <form class="form-div">
+      <div class="choice-part">
+        <div class="choice-top">
+          <h4><span class="views">100k</span> pageviews</h4>
+
+          <div class="slide-input">
+            <div class="inner_div">
+              <input
+                type="range"
+                name="price"
+                id="price"
+                min="8"
+                max="36"
+                step="4"
+                value="16"
+              />
+              <div class="input-color"></div>
+            </div>
+          </div>
+
+          <div class="price">
+            <h1>$<output class="price-output" for="price">16</output>.00</h1>
+            <h3 class="date">/ month</h3>
+          </div>
+        </div>
+        <div class="year-month-choice">
+          <div class="choice-left">
+            <h5>Monthly Billing</h5>
+            <div class="choice-input">
+              <div class="circle-left circle"></div>
+              <div class="circle-right circle"></div>
+            </div>
+            <h5>Yearly Billing</h5>
+          </div>
+          <div class="choice-right">
+            <h6 class="first-posibility posibility">-25%</h6>
+            <h6 class="second-posibility posibility">25% discount</h6>
+          </div>
+        </div>
+      </div>
+      <div class="selecting-part">
+        <div class="info-about-product">
+          <div class="info-1 info">
+            <img src="./images/icon-check.svg" alt="" />
+            <h5>Unlimited websites</h5>
+          </div>
+          <div class="info-2 info">
+            <img src="./images/icon-check.svg" alt="" />
+            <h5>100% data ownership</h5>
+          </div>
+          <div class="info-3 info">
+            <img src="./images/icon-check.svg" alt="" />
+            <h5>Email reports</h5>
+          </div>
+        </div>
+        <a href="#"
+          ><button><h5>Start my trial</h5></button></a
+        >
+      </div>
+      <h4></h4>
+    </form>
+  </body>
+</html>

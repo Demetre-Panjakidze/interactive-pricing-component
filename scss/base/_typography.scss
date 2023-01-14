@@ -1,0 +1,85 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+body {
+  font-family: $main-font;
+}
+
+p {
+  @include fontStyles(13px, 600, 23px, 0px);
+}
+
+h1 {
+  @include fontStyles(32px, 800, 44px, -0.800000011920929px);
+}
+
+h2 {
+  @include fontStyles(20px, 800, 27px, 0px);
+}
+
+h3 {
+  @include fontStyles(14px, 600, 19px, 0px);
+}
+
+h4 {
+  @include fontStyles(12px, 800, 16px, 1.7142857313156128px);
+}
+
+h5 {
+  @include fontStyles(12px, 600, 16px, 0px);
+}
+
+h6 {
+  @include fontStyles(10px, 800, 14px, 0px);
+}
+
+@media (min-width: 1440px) {
+  p {
+    @include fontStyles(15px, 600, 20px, 0px);
+  }
+
+  h1 {
+    @include fontStyles(40px, 800, 55px, -1px);
+  }
+
+  h2 {
+    @include fontStyles(28px, 800, 38px, 0px);
+  }
+
+  h3 {
+    @include fontStyles(16px, 600, 22px, 0px);
+  }
+
+  h4 {
+    @include fontStyles(14px, 800, 19px, 2px);
+  }
+}
+
+h1,
+h2 {
+  color: $primary-color;
+}
+
+h3,
+h4,
+h5,
+p {
+  color: $secondary-color;
+}
+
+h6 {
+  color: $third-color;
+}
+
+button {
+  h5 {
+    font-weight: 800;
+    color: $fourth-color;
+  }
+
+  &:hover {
+    h5 {
+      color: $white;
+    }
+  }
+}
