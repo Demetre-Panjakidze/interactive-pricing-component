@@ -57,15 +57,18 @@ const date = document.querySelector(".date");
 let firstChosed = true;
 
 choiceContainer.addEventListener("click", () => {
+  let priceValue = price.value;
   if (firstChosed === true) {
     firstChosed = false;
     circle1.style.display = "none";
     circle2.style.display = "block";
     date.innerHTML = "/ year";
+    output.textContent = priceValue * 12 * 0.75;
   } else {
     firstChosed = true;
     circle1.style.display = "block";
     circle2.style.display = "none";
     date.innerHTML = "/ month";
+    output.textContent /= 9;
   }
 });
